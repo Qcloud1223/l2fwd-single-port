@@ -561,6 +561,10 @@ check_all_ports_link_status(uint32_t port_mask)
 			printf("done\n");
 		}
 	}
+    /* see it as error if all ports are not up */
+    if (all_ports_up == 0) {
+        rte_exit(EXIT_FAILURE, "Cannot run when some port is not up");
+    }
 }
 
 static void
