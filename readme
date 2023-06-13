@@ -1,0 +1,9 @@
+## l2fwd-single-port
+
+The majority of DPDK l2fwd but without:
+
+- port pair checking (only single port)
+- screen-clearing output
+- and more in progress
+
+Especially handy for quick experiments.
